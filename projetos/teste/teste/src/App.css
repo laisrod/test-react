@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Marvel";
+  src: url("./fonts/MarvelRegular.ttf") format("truetype");
+}
+
+body {
+  background-color: #000 !important;
+  h1,
+  h2,
+  h3,
+  p {
+    color: white;
+  }
+}
+
+#app {
+  background-color: #000;
+}
+head {
+  background-color: #000;
+}

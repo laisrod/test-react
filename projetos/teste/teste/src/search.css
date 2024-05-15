@@ -1,0 +1,9 @@
+.filter.form-select {
+  background-color: #000;
+  color: red;
+  width: 20%;
+  padding-left: 10px;
+}
+form-select {
+  background-color: #000;
+}

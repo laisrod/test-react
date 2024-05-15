@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Marvel";
+  src: local("Marvel"), url("fonts/MarvelRegular.ttf") format("ttf");
+}
+
+.home-letter {
+  position: relative;
+  font-family: "Marvel";
+  font-style: normal;
+  text-decoration: none;
+
+  width: 50px;
+  height: 26px;
+  top: -15px;
+}
+.home {
+  background-color: #000;
+  color: white;
+  position: relative;
+
+  height: 36px;
+  top: 15px;
+  width: 70px;
+  left: 25px;
+  padding-top: 19px;
+
+  font-family: "Marvel";
+  font-style: normal;
+  font-size: 25px;
+  line-height: 10px;
+  color: #fff;
+  background-color: red;
+  text-decoration: none;
+}
+.home2 {
+  position: relative;
+  font-family: "Marvel";
+  font-style: normal;
+  font-size: 25px;
+  height: 50px;
+  width: 70px;
+
+  top: 66px; /* Ajuste conforme necessário */
+  left: -20px;
+  background-color: #000;
+}
+#basic-nav {
+  font-size: 22px;
+  /* padding-left: 300px; */
+  line-height: 10px;
+}
+.homePersonagens {
+  font-size: 18px;
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+
+  width: 0px;
+  height: 3px;
+  left: 50px;
+
+  display: inline-block;
+  color: #e5e5ea;
+}
+.filmes {
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+
+  width: 0px;
+  height: 3px;
+  left: 50px;
+
+  color: #e5e5ea;
+  background-color: #e5e5ea;
+  display: inline-block;
+  color: #e5e5ea;
+}
+.hqs {
+  font-size: 18px;
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+
+  width: 0px;
+  height: 3px;
+  left: 50px;
+
+  display: inline-block;
+  color: #e5e5ea;
+}
+.filmes,
+.homePersonagens,
+.hqs:hover {
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+.container {
+  background-color: #000;
+}
+#line {
+  color: red;
+}
+.homepage {
+  position: relative;
+  box-sizing: border-box;
+  width: 80%;
+  bottom: 10px;
+  background: #000000;
+  margin-bottom: 0 !important;
+
+  display: flex;
+}
+#container {
+  position: relative;
+  width: 100%; /* Define a largura como 100% da largura da viewport */
+  height: 90px;
+}
+.sair {
+  position: relative;
+  width: 42px;
+  height: 24px;
+  left: 30px;
+  top: 10px;
+
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 35px;
+  line-height: 1px;
+  color: #e5e5ea;
+}
+.img {
+  padding-left: 285px !important;
+  border: none;
+  padding-rigth: 0px !important;
+  line-height: 5px;
+}
+.bg-body-tertiary {
+  background-color: red;
+  color: red;
+}
+
+.ml-auto {
+  display: flex;
+  justify-content: space-between;
+}
