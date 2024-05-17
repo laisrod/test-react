@@ -1,30 +1,95 @@
 .movie-details {
-    position: fixed; /* Para manter os detalhes do filme fixos na tela */
-    top: 50%; /* Posiciona o componente no meio verticalmente */
-    left: 50%; /* Posiciona o componente no meio horizontalmente */
-    transform: translate(-50%, -50%); /* Centraliza o componente */
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000; /* Para garantir que os detalhes do filme fiquem acima dos outros elementos */
-    max-width: 80%; /* Limita a largura máxima do componente */
-    background-color: red;
+  position: fixed;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px !important;
+  z-index: 1000;
+  max-width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(128, 0, 0, 0.658824) 20%,
+    #ff0000 100%
+  );
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 25px;
+}
 
-    text-align: center;
-    display: flex; /* Usa flexbox para alinhamento */
-  align-items: center; /* Centraliza os itens verticalmente */
+.movie-details .img {
+  width: 5%; /* Atualize o valor para diminuir a largura da imagem */
+  height: auto;
+  left: 50%;
+  grid-column: -2; /* Atualize o valor para 1 para alinhar a imagem à esquerda */
+  padding-left: 0px; /* Adicione um espaçamento à direita para separar a imagem do título */
+}
+
+.movie-details .button {
+  margin-top: 10px;
+  grid-column: 2;
+  grid-row: 1;
+  /* Atualize o valor para 2 para alinhar os outros elementos à direita */
+}
+.btn {
+  align-items: center;
   justify-content: center;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  grid-column: 1;
+}
+h2 {
+  padding: 10px;
+  color: #fff;
+  grid-column: 1; /* Adicione essa propriedade para alinhar o h2 à esquerda */
+  align-self: center; /* Adicione essa propriedade para centralizar verticalmente o h2 */
+  grid-row: 1;
+}
+h5 {
+  grid-row: 1;
+  grid-column: 2;
+}
+.stars {
+  color: gold;
+}
+.descricao {
+  grid-row: 2;
+  grid-column: 1;
+  padding: 10px;
+  width: 40%;
+  margin-bottom: 0px;
+  width: 100vh;
+}
+.avaliacao {
+  padding-right: 630px;
+  display: inline-block;
+  position: absolute;
+  right: 350px;
+  top: 400px;
+  margin-left: -200px;
+  padding-left: 250px;
+}
+.imgAvailable {
+  display: inline-block;
+  margin-top: -170px;
+  margin-left: 15px;
+ 
+  grid-row: 3;
+  grid-column: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  align-items: center;
 
-  }
-  
-  .movie-details img {
-    width: 80%; /* Define a largura da imagem para ocupar 100% do espaço dentro do componente */
-    height: auto; /* Mantém a proporção da imagem */
-  }
-  
-  .movie-details button {
-    margin-top: 10px; /* Adiciona um espaçamento acima do botão */
-  }
-  .btn{
-    justify-content: flex-start;
-  }
+
+}
+.streamings{
+  display: inline-block;
+  margin-top: -200px;
+  padding-left: 10px;
+  grid-row: 3;
+  grid-column: 1;
+}
+.critica {
+  pading-top: 200px;
+}

@@ -101,42 +101,41 @@
   background-color: #fff;
   transition: background-color 0.2s ease;
 }
-.container {
-  background-color: #000;
-}
-#line {
-  color: red;
-}
 .homepage {
   position: relative;
   box-sizing: border-box;
   width: 80%;
   bottom: 10px;
-  background: #000000;
-  margin-bottom: 0 !important;
-
-  display: flex;
+  background: #000000 !important;
+  display: relative;
+  margin-bottom: 0;
+}
+.container .homepage {
+  background-color: #000000 !important;
+  display: relative;
+  position: relative;
 }
 #container {
-  position: relative;
   width: 100%; /* Define a largura como 100% da largura da viewport */
-  height: 90px;
+  height: 100px;
+  background-color: #000000;
+  margin: auto;
+}
+.linha {
+  border-bottom: 3px solid red;
 }
 .sair {
-  position: relative;
   width: 42px;
-  height: 24px;
-  left: 30px;
+  height: -50px;
   top: 10px;
-
   font-weight: 400;
   font-size: 18px;
-  padding-bottom: 35px;
+  padding-bottom: 15px;
   line-height: 1px;
-  color: #e5e5ea;
+  left: -300px; 
 }
 .img {
-  padding-left: 285px !important;
+  padding-left: 550px !important;
   border: none;
   padding-rigth: 0px !important;
   line-height: 5px;
@@ -145,8 +144,11 @@
   background-color: red;
   color: red;
 }
-
 .ml-auto {
   display: flex;
   justify-content: space-between;
+  gap: 300px;
+}
+.basic-navbar-nav{
+  border: 10px;
 }

@@ -13,21 +13,30 @@ function MovieDetails(card) {
   return card.showDetails ? (
     <div>
       <div className="movie-details">
+
+        <h2>{card.movie.title}</h2>
+        <p className='descricao'>{card.movie.descricao}</p>
+        <p className='streamings'>Disponível em streamings:</p>
+        <img src='/image/logo-grande.png' className='imgAvailable'></img>
+        <div className='stars'>
+          {card.movie.avaliacao !== 0 ? (
+            <div className='avaliacao'>
+              <h5 className='critica'>Crítica</h5>
+              {renderStars(card.movie.avaliacao)}
+            </div>
+          ) : (
+            <div className='avaliacao'>
+              <h5 >Avaliação dos Fãs</h5>
+              {renderStars(card.movie.critica)}
+            </div>
+          )}
+        </div>
+        
         <div>
           <img src={card.movie.dataFirst} alt={card.movie.title} />
         </div>
-        <h2>{card.movie.title}</h2>
-        <p>{card.movie.descricaoDetalhes}</p>
-        <div className='stars'>
-          {card.movie.avaliacao !== 0 ? (
-            renderStars(card.movie.avaliacao)
-          ) : (
-            renderStars(card.movie.critica)
-          )}
-        </div>
-
         <div className="btn">
-          <button onClick={card.onClose}>Fechar</button>
+          <button onClick={card.onClose} className='btn'>Fechar</button>
         </div>
       </div>
     </div>

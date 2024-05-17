@@ -8,39 +8,35 @@ import './navBar.css';
 function navBar() {
   return (
     <div className="homepage">
-      <Navbar expand="lg" bg="dark" data-bs-theme="dark">
+
+      <Navbar expand="lg" bg="dark" data-bs-theme="dark" class="dark">
         <Container id="container">
 
           <div className="home-letter">
             <p className='home'>MARVEL</p>
           </div>
 
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className='basic-navbar-nav' />
           <Navbar.Collapse id="basic-navbar-nav">
+
             <Nav className="ml-auto">
-              
-              <div className='divPersonages'>
                 <Nav.Link href="/personagens" className='homePersonagens' id='basic-nav'>Personagens</Nav.Link>
-              </div>
-              <div className='divFilmes'>
                 <Nav.Link href="/filmes" className="filmes" id='basic-nav'>Filmes</Nav.Link>
-              </div>
-              <div className='divHq'>
                 <Nav.Link href="/hqs" className="hqs" id='basic-nav'>HQs</Nav.Link>
-              </div>
             </Nav>
-              <Nav className="ml-auto align-items-center">
-                  <Image className='img' src="./image/profile-picture.png"/>
-                  <NavDropdown title="Sair" className='sair'>
-                  <NavDropdown.Item href="/" >Sair</NavDropdown.Item>
-                  </NavDropdown>
+
+            <Nav className="ml-auto align-items-center">
+                <Image className='img' src="./image/profile-picture.png"/>
+                <NavDropdown title="Sair" className='sair'>
+                  <NavDropdown.Item href="/" title="Sair" className='sair'>Sair</NavDropdown.Item>
+                </NavDropdown>
             </Nav>
-          </Navbar.Collapse>
-          <div id='line'>
-            <br />
-          </div>
+
+          </Navbar.Collapse>  
         </Container>
       </Navbar>
+      <div className='linha'></div>
+      
     </div>
   );
 }

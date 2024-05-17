@@ -6,5 +6,9 @@
 .button {
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  color: #fff;
+  border: none; 
+  padding-left: 100px;
 }
-
